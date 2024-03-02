@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    //*** form atrubutes **//
+    ;action => server file /path()
+    method => post -> hide the data
+              get ->display the data in the url address 
+    autocomplete => clear the history -> off / on (default)
+    enctype=>
+    -->
+    <form action="https://localhost/server.php" method="post" autocomplete="off" enctype="multipart/form-data">
+       <fieldset>
+        <legend>Liogin Form</legend>
+        <label for="user">username</label>
+        <input type="text" name="fuser" id="fuser" value="test@gmail.com" readonly required>
+        <br><br>
+
+        <label for="pass">password</label>
+        <input type="password" name="fpass" id="pass" placeholder="min 6 char and above" min="6" maxlength="12"required>
+        <br><br>
+
+        <label for="mfile">uplode file</label>
+        <input type="file" name="mfile" id="mfile">
+
+        <br><br>
+
+        <input type="submit" value="login">
+        <input type="reset" value="clear">
+       </fieldset>
+    </form>
+    <!--
+        lable => lable of the input tag 
+        type => field input type
+        name => address yo target the input file
+        value => default value
+        placeholder => hint for user
+        required => mandatory input
+        readonly = cannot modifie
+
+    -->
+</body>
+</html>

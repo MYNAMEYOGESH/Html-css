@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0%;
+        }
+
+        * {
+            transition: all .3s, height 1ms;
+        }
+
+        [for] {
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+        }
+
+        .container , #foot {
+            width: calc(100% - 2em);
+            color: #444;
+            padding: 1rem;
+        }
+
+        .container {
+            height: calc(100vh - 2rem);
+        }
+
+        #darkTheme:checked ~ .container,
+        #darkTheme:checked ~ #foot {
+            color: #eee;
+        }
+
+        #darkTheme:checked ~ .container {
+            background-color: #333;
+        }
+
+        /* sidebar */
+        #sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            /*left: 0;*/
+            right: 0%;
+            width: 300px;
+            /*margin-left: -310px;*/
+            margin-right: -310px;
+            padding: 20px;
+            box-shadow: 0 0 4px rgb(0, 0, 0, 0.4);
+            color: #fff;
+            background-color:orange;
+        }
+
+        #sidebarshown:checked ~ .container #sidebar {
+            /*margin-left: 0;*/
+            margin-right: 0;
+
+        }
+
+        #darkTheme:checked ~ .container #sidebar {
+            background-color: #222;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: bold;
+            line-height: 36px;
+            text-align: center;
+            padding: 0px 8px;
+            min-width: 20px;
+            background-color: rgb(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
+        #sidebar .manu li{
+            display: block;
+            margin-top: 20px;
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 14px;
+            cursor: pointer;
+            background-color: rgb(0, 0, 0, 0.5);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox"  id="sidebarshown" hidden>
+    <input type="checkbox"  id="darkTheme" hidden>
+
+    <div class="container">
+        <div id="sidebar">
+            <label for="sidebarshown" class="btn">&times;</label>
+            <h3>super cool sidebar</h3>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#jobs">jobs</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h3>sample page title</h3>
+            <p>
+                <label for="darkTheme"> click Me to change theme</label>
+            </p>
+
+            <p>
+                <label for="sidebarshown" class="btn">toggle sidebar</label>
+            </p>
+        </div>
+    </div>
+
+    <footer id="foot">
+        <p>All  r</p>
+    </footer>
+</body>
+</html>

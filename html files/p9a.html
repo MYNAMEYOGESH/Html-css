@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text on canvas</h1>
+    <canvas class="txt"></canvas>
+    <script>
+        let x = document.querySelector('.txt');
+        let s = x.getContext('2d');
+        s.font = "45px sans-serif";
+        s.fillText("Hello world",20,100);
+        //s.strokeText("Hello world",20,100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #card {
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            background-color: teal;
+            color: #fff;
+            visibility: v;/* hidden and visible */
+        }
+    </style>
+</head>
+<body>
+    <h3>visibility</h3>
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+
+    <div id="card">
+        <h3>card header</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit vel est eos ea modi magnam, nostrum voluptatum. Vero quisquam laborum libero, dolores hic aliquam? Architecto ducimus ipsum quia labore inventore.</p>
+    </div>
+
+    <script>
+        var card = document.getElementById("card");
+        document.getElementById("show").onclick = function(){
+            card.style.visibility = "visible";
+        };
+        
+        document.getElementById("hide").onclick = function(){
+            card.style.visibility = "hidden";
+        };
+
+    </script>
+</body>
+</html>

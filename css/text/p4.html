@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            direction: ltr;
+        }
+        .p2 {
+            direction: rtl;
+            unicode-bidi: bidi-override;/* flip the content to mirrer effect */
+        }
+
+        .p3 {
+            white-space: pre;/* pre, pre-wrap, pre-line */
+        }
+
+    </style>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat sit saepe error omnis culpa iure cupiditate beatae explicabo quidem. Voluptas aut, sapiente voluptates aliquid id illum dignissimos omnis deserunt!Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo vel dignissimos ab repellendus, perspiciatis voluptas asperiores officia corporis similique! Fuga tenetur ducimus pariatur eaque magni repellat veritatis ipsa illum.</p>
+
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quaerat sit saepe error omnis culpa iure cupiditate beatae explicabo quidem. Voluptas aut, sapiente voluptates aliquid id illum dignissimos omnis deserunt!Lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa doloremque ducimus atque consectetur rem pariatur, facere at magnam iure alias itaque id eius animi aut, laudantium labore nisi, quas impedit.</p>
+
+    <pre>
+        function product(a,b){
+            return a*b;
+        }
+
+        product(123,33);
+    </pre>
+    <hr>
+    <p class="p3">
+        function product(a,b){
+            return a*b;
+        }
+
+        product(123,33);
+
+    </p>
+</body>
+</html>

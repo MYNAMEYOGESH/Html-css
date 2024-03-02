@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p[class~="web"] {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h3> [attr ~= value ]</h3>
+    <p>Represent element with an attribute name of attr whose value is a whitespace-separated list of words,one of which is exactly value</p>
+
+    <div>
+        <p class="web txt">Welcom to HTML</p>
+        <p class="web txt">Welcom to HTML</p>
+        <p class="web-txt">Welcom to HTML</p>
+        <p class="web-txt">Welcom to HTML</p>
+        <p class="txt web">Welcom to HTML</p>
+        <p class="txt web blk">Welcom to HTML</p>
+    </div>
+</body>
+</html>

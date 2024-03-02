@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            letter-spacing: 1px;
+            padding: 10px;
+
+        }
+
+        div {
+            background-color: red;
+
+        }
+
+        div,span {
+            background-color: black;
+            color: #fff;
+            margin: 1px;
+        }
+
+        div,span {
+            padding: 10px;
+            border-radius: 7px;
+        }
+
+        div,span {
+            margin: 20px;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <span>first</span>
+        <span>second</span>
+        <span>third</span>
+    </div>
+
+    <div class="container">
+        <span>first</span>
+        <span>second</span>
+        <span>third</span>
+    </div>
+    <hr>
+
+    <table>
+        <label for="display">choose display value</label>
+        <select name="" id="display">
+            <option selected>block</option>
+            <option >inline</option>
+            <option >inline-block</option>
+            <option >none</option>
+            <option >flex</option>
+            <option >inline-flex</option>
+            <option >grid</option>
+            <option >inline-grid</option>
+            <option >table</option>
+           
+        </select>
+        <script>
+            const element = document.querySelectorAll('.container');
+            const select = document.querySelector('select');
+
+            function update() {
+                element.forEach(function(item){
+                    item.style.display = select.value;
+                });
+            }
+            select.addEventListener('change',update);
+        </script>
+    </table>
+</body>
+</html>

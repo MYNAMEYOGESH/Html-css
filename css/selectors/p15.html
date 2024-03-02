@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        tr,th,td{
+            padding: 10px;
+        }
+        /*  :nth-child(position) can target any child element */
+       /* tr:nth-child(even) {
+            background-color: teal;
+            color: #222;
+        }
+        */
+
+       /* tr:nth-child(odd) {
+            background-color: slateblue;
+            color: #fff;
+        }
+        */
+        tr:nth-child(5) {
+            background-color: red;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>selector:nyh-child(position)</h3>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th colspan="2">Mobile</th>
+        </tr>
+        <tr>
+            <td>raju</td>
+            <td>raju@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>raju</td>
+            <td>raju@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>Anand</td>
+            <td>Anamd@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>srujan</td>
+            <td>srujan@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>yogi</td>
+            <td>yogi@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>nandi</td>
+            <td>nandi@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+        <tr>
+            <td>vinu</td>
+            <td>vinu@gmail.com</td>
+            <td>9995656259</td>
+            <td>5946216556</td>
+        </tr>
+    </table>
+</body>
+</html>

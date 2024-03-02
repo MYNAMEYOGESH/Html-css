@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div {
+            padding: 20px;
+            counter-reset: ch;
+            
+        }
+        .continer {
+            display: flex;
+            border: 300px;
+        }
+
+        h2::before {
+            counter-increment: ch;
+            content: counter(ch);
+            color: aqua;
+        }
+
+        h2 {
+            counter-reset: topic;
+        }
+
+        h4::before {
+            counter-increment: topic;
+            content: counter(ch) "." counter(topic) "";
+            margin-left: 30px;
+            color: orangered;
+        }
+
+        h4 {
+            counter-reset: topic;
+        }
+
+        p::before {
+            counter-increment: subt;
+            content: counter(ch) "." counter(topic) "." counter(head) " ";
+            margin: 80px;
+            color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Table of contents</h1>
+
+    <div class="container">
+      <h2>HTML</h2>
+        <h4>Hrader tag</h4>
+            <p>h1 tgg</p>
+            <p>h2 tgg</p>
+            <p>h3 tgg</p>
+            <p>h4 tgg</p>
+        <h4>Format tags</h4>
+            <p>paragraph tag</p>
+            <p>bold tag </p>
+            <p>underline tag</p>
+        <h4>Table</h4>
+            <p>un order list</p>
+            <p>order list</p>
+            <p>definition list</p>
+        <h4>Form tags</h4>
+        
+    <h2>CSS</h2>
+        <h4>color</h4>
+            <p>hex code</p>
+            <p>color name</p>
+            <p>rgb function</p>
+            <p>rgba function</p>
+    
+    <h2>JavaScript</h2>
+        <h4>variables</h4>
+            <p>var keyword</p>
+            <p>let keyword</p>
+            <p>const keyword</p>
+        <h4>operators</h4>
+        <h4>conditional and looping</h4>
+            <p>if</p>
+            <p>if and else</p>
+            <p>if, else if and else</p>
+            <p>switch case</p>
+        <h4>Arrays</h4>
+
+    <h2>Jquery</h2>
+    <h2>Bootstrap</h2>
+    </div>
+</body>
+</html>

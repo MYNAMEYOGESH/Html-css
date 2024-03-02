@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        header{
+            padding: 20px;
+            background: #aaa;
+        }
+        .menu a {
+            text-decoration: none;
+            background: slateblue;
+            color: #fff;
+            padding: 14px 16px;
+        }
+
+        .menu a:hover {
+            background: orangered;
+        }
+
+        .menu .right {
+            position: absolute;
+            right: 10px;
+            top:-12px;
+        }
+        
+        .menu .right a{
+            float: left;
+            margin-left: 5px;
+        }
+
+        section {
+            display: flex;
+            height: 100vh;
+        }
+
+        aside {
+            background: gold;
+            color: #fff;
+            width: 10vw;
+            padding: 20px;
+        }
+
+        .center {
+             padding: 20px;
+             height: 100vh; 
+        }
+        .center p {
+            text-align: justify;
+            word-break: break-all;
+            line-height: 25px;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .menu {
+            position: relative;
+        }
+
+        .menu .menu-btn {
+            padding: 10px;
+            position: absolute;
+            top: -10px;
+            right: 0;
+            display: none;
+        }
+
+        .menu-btn div {
+            height: 3px;
+            width: 20px;
+            background-color: #222;
+            margin: 2px;
+            cursor: pointer;
+
+        }
+
+        @media screen and (max-width:767px) {
+            .menu .menu-btn{
+                display: block;
+            }
+
+            .menu .right {
+                display: none;
+            }
+            .menu.active .right {
+                position: relative;
+                display: block;
+                left: 0px;
+                top: 15px !important;
+                margin: 10px;
+            }
+
+            .menu .right a {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="right">
+                <a href="#">home</a>
+                <a href="#">About</a>
+                <a href="#">mywork</a>
+                <a href="#">contact</a>
+            </div>
+            <button class="menu-btn" onclick="toggle()">
+             <div></div>
+             <div></div>
+             <div></div>
+            </button>
+        </nav>
+    </header>
+    <section>
+        <aside>
+            <p>left sidebar</p>
+        </aside>
+
+        <div class="center">
+            <h3>Welcome to html</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus maxime dicta deleniti, maiores perspiciatis esse quisquam, fugiat dolores illo accusamus delectus totam itaque! Nulla corporis minus animi aliquam numquam consequatur.</p>
+        </div>
+
+        <aside>
+            <p>right sidebar</p>
+        </aside>
+    </section>
+    <footer>
+        <p>All Right reserved .&copy; 2002</p>
+    </footer>
+
+    <script>
+        let mr = document.querySelector(".menu");
+
+        function toggle(){
+            mr.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

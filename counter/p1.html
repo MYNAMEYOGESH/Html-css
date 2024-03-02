@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+            counter-reset: ch;
+        }
+
+        h1::before {
+            counter-increment: ch;
+            content: counter(ch);
+            color: aqua;
+        }
+
+        h1 {
+            counter-reset: topic;
+        }
+
+        h3::before {
+            counter-increment: topic;
+            content: counter(ch) "." counter(topic) "";
+            margin-left: 30px;
+            color: orangered;
+        }
+
+        h3 {
+            counter-reset: topic;
+        }
+
+        h5::before {
+            counter-increment: subt;
+            content: counter(ch) "." counter(topic) "." counter(subt) " ";
+            margin: 80px;
+            color: green;
+
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>HTML</h1>
+        <h3>Header tags</h3>
+            <h5>h1-h6</h5>
+        <h3>Format tags</h3>
+            <h5>paragraph</h5>
+            <h5>address</h5>
+            <h5>strong and bold</h5>
+        <h3>Link and Button tags</h3>
+        <h3>Table and list tags</h3>
+
+    <h1>CSS</h1>
+        <h3>selectors</h3>
+        <h3>Background</h3>
+            <h5>backgroung-color</h5>
+            <h5>clolor</h5>
+            <h5>borger-color</h5>
+            <h5>font-family</h5>
+        <h3>overflow and opacity</h3>
+        <h3>Text and float</h3>
+    <h1>java script</h1>
+        <h3>introduction</h3>
+        <h3>operators</h3>
+        <h3>conditional and loops</h3>
+        <h3>arrays</h3>
+            <h5>literal</h5>
+            <h5>object</h5>
+            <h5>json</h5>
+        <h3>function</h3>
+    <h1>react JS </h1>
+        <h3>react components</h3>
+            <h5>functional components</h5>
+            <h5>yogi</h5>
+        </body>
+</html>

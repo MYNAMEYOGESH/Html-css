@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+header a{
+    text-decoration: none;
+    padding: 0 20px;
+    color: #222;
+    font-size: 12em;
+    transition: all 0.5s;/* 1000ms = 1s */
+}
+
+nav {
+    transition: all 0.5s;/* 1000ms =1s */
+}
+
+nav:hover a {
+    opacity: 0.2;
+    filter: blur(2px);
+}
+
+nav a:hover {
+    opacity: 1;
+    filter: blur(0px);
+}

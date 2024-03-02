@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for=" ">search</label>
+        <input type="aearch" name="my key" id=""> <!-- hell word  hell + word => string query-->
+        <br><br>
+
+        <label for="">range</label>
+        <input type="range" name="my range" id="num" min="8" max="100" step="5" value="5" onchange="getValue()" 
+        style="width:100%;">
+        <p><strong id="output"></strong></p>
+        <br><br>
+
+        <label for=""> choose color</label>
+        <input type="color" name="color" id="">
+
+        <br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="celar">
+
+    </form>
+    <script>
+        function getValue() {
+            var x = document.getElementById("num").value;
+            document.getElementById("output").innerText = x;
+        }
+        getValue();
+    </script>
+</body>
+</html>

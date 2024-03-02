@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=poppins&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            overflow: 100%;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            font-family: 'poppins', sans-serif;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .hero {
+            width: 60%;
+            margin: auto;
+            border: 1px solid #222;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: #0093e9;
+            background-image: linear-gradient(160deg, #296689,#700e52 100%);
+            border-radius: 10px;
+        }
+
+        .hero .title {
+            text-align: center;
+            flex: 2;
+        }
+
+        .hero .start {
+            flex: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .hero .start button {
+            padding: 10px 12px;
+            width: 150px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #888;
+            background-color: #eaedef;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-image: linear-gradient(160deg,#eaeced , #dcdbdb);
+            transition: 1s ease;
+        }
+
+        .hero .start button:hover {
+            border: none;
+            color: #555;
+            background-image: linear-gradient(100deg, #988ddd , #cebb96);
+        }
+
+        .hero .start .txt {
+            font-size: 0.6rem;
+        }
+        
+        @media screen and(max-width:768px) {
+            .container .hero {
+                width: 80%;
+                display: block;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="hero">
+        <div class="title">
+            <h3>Create Content Experiences. Better . Faser</h3> </div>
+
+        <div class="start">
+            <p class="sub">Try readz editor for free</p>
+            <button>get started</button>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

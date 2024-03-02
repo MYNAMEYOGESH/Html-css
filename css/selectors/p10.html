@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td,tr {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        trtd,th {
+            padding: 10px;
+        }
+
+        th[colspan|="2"] {
+            background-color: red;
+            color: #fff;
+
+        }
+
+        td[class|="cell"] {
+            background-color: teal;
+            color: #fff;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>element[attribute|="value"]</h1>
+    <p>Represents element with an attribute name of attr whose value can be exactly value or can begin with value immediately followed by a hyphen</p>
+    <table>
+       <tr>
+        <th>name</th>
+        <th>Email</th>
+        <th colspan="2">Mobile</th>
+       </tr>
+
+       <tr>
+        <td>raju</td>
+        <td class="cell-txt">raju@gmail.com</td>
+        <td>9902525555</td>
+        <td class="cell">9998558558</td>
+       </tr>
+       <tr>
+        <td class="cell_txt">yogi</td>
+        <td class="txt">yogi@gmail.com</td>
+        <td class="">992984596</td>
+        <td>996598595</td>
+       </tr>
+    </table>
+</body>
+</html>

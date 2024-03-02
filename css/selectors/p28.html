@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p:last-child {
+            background-color: blueviolet;
+        }
+
+        .container1 p:last-of-type {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <h3>: last-of-type</h3>
+    <div class="container">
+        <p>1 para</p>
+        <!--last-child element selects the element must be present as a last element -->
+        <p>2 para</p>
+        <h4>heading 4 title</h4>
+        <p>3 para</p>
+        <h3>this is heading 3</h3>
+        <p>4 para</p>
+        <h2>welcon to h2</h2>
+        <p>last para</p>
+    </div>
+
+    <hr>
+
+    <div class="container1">
+        <p>1 para</p>
+        <!--last-of-type select the element that is last-child or a particular type , doesn't check the postion of the element -->
+        <p>2 para</p>
+        <h4>heading 4 title</h4>
+        <p>3 para</p>
+        <h3>this is heading 3</h3>
+        <p>4 para</p>
+        <h2>welcon to h2</h2>
+    </div>
+</body>
+</html>
